@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/css/example.css">
+    <title>Document</title>
+</head>
+<body>
+    <p>{{x}}</p>
+    <img src={{imagen}} />
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Date</th>
+            <th>Number</th>
+            <th>Status</th>
+            <th>Product</th>
+        </tr>
+        {{#each exchanges}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{this.date}}</td>
+                <td>{{this.number}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.product}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
